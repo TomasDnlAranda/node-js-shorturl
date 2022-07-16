@@ -1,0 +1,14 @@
+{{! no hay que poner todo porque ahora es dinamico }}
+<h1>Hola desde Login</h1>
+{{! utilizamos los helpers, le pasamos como parametro en este caso el arr de objetos y lo pintamos de manera dinamica }}
+{{#each datos}}
+	<div class='card mt-2'>
+		<div class='card-body'>
+			<p>{{this.url}}</p>
+			<p>{{this.shortUrl}}</p>
+			<a href='#' class='btn btn-danger'>Eliminar</a>
+			<a href='#' class='btn btn-warning'>Editar</a>
+			<a href='#' class='btn btn-info'>Copiar</a>
+		</div>
+	</div>
+{{/each}}
